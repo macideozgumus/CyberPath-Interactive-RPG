@@ -1,0 +1,24 @@
+{
+  "game_title": "CyberPath",
+  "version": "1.0.0",
+  "roles": ["student", "teacher", "lawyer"],
+  "scenario_example": {
+    "role": "teacher",
+    "scene_id": "T01",
+    "text": "Sınıf grubunda bir öğrencinin ifşa edildiğini gördün. Ne yaparsın?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Gruba yazıp herkesi tehdit et.",
+        "next_scene_id": "T02_BAD",
+        "consequence_score": -10
+      },
+      {
+        "id": "B",
+        "text": "Ekran görüntüsü al ve rehberlik servisine git.",
+        "next_scene_id": "T02_GOOD",
+        "consequence_score": +10
+      }
+    ]
+  }
+}
